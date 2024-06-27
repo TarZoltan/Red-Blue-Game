@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" style="-fx-background-color: aliceblue; -fx-font-size: 18;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boardgame.UInavigation.MenuController">
+
+    <Label layoutX="182.0" layoutY="77.0" text="StepGame" textFill="#8f9bd7">
+        <font>
+            <Font size="36.0" />
+        </font>
+    </Label>
+    <Label layoutX="182.0" layoutY="77.0" text="" textFill="#002366">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+
+    <children>
+    <VBox alignment="CENTER" prefHeight="40.0" prefWidth="20.0" spacing="10.0">
+        <children>
+            <Label text="Kék játékos" />
+            <TextField fx:id="playerBlueTextField" prefHeight=".0" prefWidth="40.0" />
+        </children>
+    </VBox>
+    <VBox alignment="CENTER" prefHeight="40.0" prefWidth="20.0" spacing="10.0">
+        <children>
+            <Label text="Piros játékos" />
+            <TextField fx:id="playerRedTextField" prefHeight="39.0" prefWidth="40.0" />
+        </children>
+    </VBox>
+
+        <Label layoutX="182.0" layoutY="77.0" text="" textFill="#002366">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+            <children>
+                <Button fx:id="game" alignment="TOP_LEFT" contentDisplay="BOTTOM" layoutX="68.0" layoutY="195.0" mnemonicParsing="false" onAction="#switchToGame" prefHeight="39.0" prefWidth="80.0" text="Game" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+            </children>
+        </HBox>
+
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label fx:id="errorLabel" prefHeight="16.0" prefWidth="169.0" textAlignment="CENTER" textFill="#e30e0e" />
+            </children>
+        </HBox>
+
+
+
+    </children>
+
+
+
+</VBox>

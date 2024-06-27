@@ -1,0 +1,21 @@
+.black{
+    -fx-background-color: black;
+}
+
+.disk {
+    -fx-border-style: solid;
+}
+
+.disk:hover {
+    -fx-background-color: #fcd973;
+}
+
+.disk.selected {
+    -fx-border-width: 2,5;
+    -fx-border-color: #c06552;
+}
+
+
+.black:hover{
+    -fx-background-color: black;
+}
